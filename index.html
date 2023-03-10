@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Random Password Generator</h1>
+            <h2>Create strong and secure passwords to keep your account safe online.</h2>
+        </div>
+        <div class="right">
+            <div class="imgg">
+                <div class="img_div">
+                    <img src="./img/image.svg" alt="">
+                </div>
+            </div>
+            <div class="column">
+                <div class="first">
+                    <div class="generator">
+                        <div class="output">
+                            <div class="password">
+                                <p></p>
+                                <div class="name">
+                                    <h5>VERY STRONG</h5>
+                                </div>
+                                <div class="again">
+                                    <i class="fa-solid fa-arrow-rotate-left"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="copy">COPY</button>
+                </div>
+                <div class="second">
+                    <h1>Password length: <span>20</span></h1>
+                    <input type="range" min="1" max="50">
+                </div>
+                <div class="three">
+                    <h1>Characters used:</h1>
+                    <ul>
+                        <li>
+                            <label for="uppercase"><input checked id="uppercase" type="checkbox">ABC</label>
+                        </li>
+                        <li>
+                            <label for="lowercase"><input id="lowercase" type="checkbox">abc</label>
+                        </li>
+                        <li>
+                            <label for="numbers"><input id="numbers" type="checkbox">123</label>
+                        </li>
+                        <li>
+                            <label for="symbols"><input id="symbols" type="checkbox">#$%@</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
